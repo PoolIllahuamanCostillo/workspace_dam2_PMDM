@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_IMC.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a submarine number ten" />
+
+            <Label
+                Text="Actividad MAUI IMC"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Calcula tu IMC y descrúbelo"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="" />
+
+            <Button 
+                x:Name="MenuBtn"
+                Text="Abrir el menú de la calculadora IMC" 
+                SemanticProperties.Hint="Clickear para abrir la calculadora"
+                Clicked="MenuBtn_Clicked"
+                HorizontalOptions="Fill" />
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_IMC.Pages.CalculadoraPage"
+             BackgroundColor="LightBlue">
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
+
+            <Border
+                Stroke="LightGray"
+                BackgroundColor="White"
+                StrokeThickness="7"
+                StrokeShape="RoundRectangle 20"
+                Padding="20">   
+
+                <VerticalStackLayout Spacing="15" >
+
+                    <Label
+                    Text="Calculadora de IMC"
+                    FontSize="28"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center" />
+
+                    <Label
+                    Text="Peso (kg)"
+                    FontAttributes="Bold"
+                    TextColor="Black"/>
+
+                    <Entry
+                    x:Name="PesoEntry"
+                    Placeholder="70"
+                    TextColor="Black"/>
+
+                    <Label
+                    Text="Altura (m)"
+                    FontAttributes="Bold"
+                    TextColor="Black"/>
+
+                    <Entry
+                    x:Name="AlturaEntry"
+                    Placeholder="1,75"
+                    TextColor="Black"/>
+
+                    <Button
+                    Text="CALCULAR IMC"
+                    Clicked="CalculadoraBtn_Clicked"
+                    BackgroundColor="#1F439B"
+                    TextColor="White"
+                    CornerRadius="8" />
+
+                    <Label
+                    x:Name="ResultadoLabel"
+                    Text=""
+                    FontSize="18"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center" />
+
+                    <Image
+                        x:Name="ResultadoImagen"
+                        HeightRequest="200"
+                        HorizontalOptions="Center"/>
+
+                </VerticalStackLayout>
+
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+</ContentPage>
